@@ -1,0 +1,86 @@
+1) Loop is used to execute a group of instructions or a block of code
+ multiple times without writing it repeatedly
+
+ for ex 
+Print Jai Shree Ram 20 times
+
+
+const n = 20;
+for (let i = 1; i <= n; i++)
+{
+    console.log("Jai Shree Ram");
+}
+
+
+2) Var is global scope. means it can be declared globally for ex 
+
+function hanumanji()
+{
+  var a = 10;        
+  var a = 20;           //a is replaced
+  console.log(a);
+}
+hanumanji();
+
+Variable declared with let keyword can be updated but not re-declared.
+Example:
+function ramji()
+{
+  let a = 10;        
+ let a = 20; //SyntaxError: 
+ //Identifier 'a' has already been declared
+  console.log(a);
+}
+ramji();
+
+3) JavaScript has 8 Datatypes
+String. 
+Number. 
+Bigint.
+Boolean.
+Undefined.
+Null.
+Symbol.
+Object.
+
+
+4) function to pass n number of arguments
+
+
+function func() {
+  let sum = 0
+  for (let i = 0; i < arguments.length; i++)
+    {
+    sum += arguments[i];
+  }
+  console.log(sum)
+  return sum;
+}
+
+func(10, 10, 10); // 30
+func(13, 14, 17, 10, 20); // 74
+func(1,4,10); // 15
+
+5) getElementsByTagName("div") is use to select all divs in html
+
+7) const originalObject = {
+  name: "James Bond",
+  age: 40,
+  profession: "Spy"
+};
+
+const clonedObject = { ...originalObject }; // spread 
+
+// Modifying the cloned object
+clonedObject.name = "John Cena";
+
+console.log("Original object:", originalObject);
+console.log("Cloned object:", clonedObject);
+
+
+8) const obj1={
+    firstName: "james",
+    lastName: "Bond"
+};
+
+console.log("My name is " + obj1.firstName + " " + obj1.lastName )
